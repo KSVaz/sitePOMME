@@ -1,0 +1,112 @@
+body {
+    margin: 10px 0;
+    text-align: center;
+    font: 0.8em "Trebuchet MS", Helvetica,  sans-serif;
+    background: #dea;
+}
+div#conteneur {
+    margin: 0 auto;
+    width: 770px;
+    border: 2px solid #ab4;
+    /* en hexadécimal il existe 16 millions de couleurs  */           
+    /* il existe les couleurs RGBA = red, green, blue, alpha. Alpha détermine la transparence/opacité de la couleur. valeur de 0 à 1  */
+    background: #fff;
+    
+    text-align: left;
+}
+h1#header {
+    height: 258px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+h1#header a {
+    /* nécessité du display: block car l'élément a href est inline donc ne prend pas les valeurs width et height. On le met donc en élémnent block  */
+    display: block;
+    width: 400px;
+    height: 70px;
+    background: url(../img/title.gif) no-repeat;
+    /* la position de l'élément a est relative à son parent, ici h1  */
+    position: relative;
+    left: 350px;
+    top: 15px;
+    /* astuce : Indentation négative du texte afin de la masquer pour les visiteurs et de laisser dans le code pour les robots, ou les moteurs de recherche qui indexent le site; action de référencement naturel */
+    text-indent: -5000px;
+}
+ul#menu {
+    list-style-type: none;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    /* /* l'image de fond est répétée horizontalement en abcsisse -x) et légèrement décalée */
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+}
+ul#menu li {
+    float: left;
+    text-align: center;           
+}
+ul#menu li a {
+    /* l'élément, la boite */
+    display: block;
+    width: 130px;
+    border-right: 2px solid #dea;
+    /* la typo */
+    text-decoration-line: none;
+    line-height: 25px;      
+    font-size: 1.2em;
+    /* épaisseur de typo  */
+    font-weight: bold;
+    /* espacement entre les lettres  */
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+ul#menu li a:hover {
+    background: url(../img/bg_menu.gif) repeat-x 0 0;
+}
+div#contenu {
+    padding: 0 30px 0 100px;
+    /* on crée un espace à gauche et un espace en haut (à l'horizontal puis à la verticale)  */
+    background: url(../img/bg_page.gif) no-repeat 15px 15px;
+}
+div#contenu h2 {
+    padding-left: 25px;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+    color: #9b2;
+    border-bottom: 1px solid #9b2;
+    /* interlignage  */
+    line-height: 25px;
+    font-size: 1.4em;
+}
+div#contenu h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #9b2;
+    border-bottom: 1px solid #9b2;
+    color: #9b2;
+}
+div#contenu p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.7em;
+}
+div#contenu blockquote {
+    border-left: 5px solid #9b2;
+    padding-left: 10px;
+}
+div#contenu blockquote .texte-a-droite {
+    text-align: right;
+}
+div#contenu a {
+    color: #8a0;
+    text-decoration-line: none;
+}
+div#contenu a:hover {
+    color: #9b2;
+}
+p#footer {
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}
